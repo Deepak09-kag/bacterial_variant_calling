@@ -1,0 +1,12 @@
+Sample: ERR008613
+Reference: NC_000913.3
+Variant position: 4296380
+Reference allele: AC
+Alternate allele: ACGC
+Variant type: 2-bp insertion (GC)
+VCF depth: 238
+SnpEff effect: intergenic_region
+Impact: MODIFIER
+Region: gltP-yjcO intergenic region
+HGVS-like notation: n.4296381_4296382insGC
+Validation: Supported by primary CIGAR 2I and mpileup insertion evidence

@@ -1,0 +1,40 @@
+# Raw sequencing data
+raw_data/*.sra
+raw_data/*.fastq
+raw_data/*.fastq.gz
+
+# Trimmed sequencing data
+trimmed/*.fastq
+trimmed/*.fastq.gz
+
+# Large alignment files
+alignment/*.sam
+alignment/*.bam
+alignment/*.cram
+alignment/*.bai
+alignment/*.crai
+
+# FastQC compressed reports
+qc/*.zip
+
+# Temporary files
+*.tmp
+*.log
+*.bak
+
+# Python cache
+__pycache__/
+*.pyc
+
+# SnpEff generated reports
+snpEff_summary.html
+snpEff_genes.txt
+
+# Reference genome and index files
+reference/*.fna
+reference/*.fna.*
+reference/*.gff
+reference/*.gff.gz
+
+# SRA archive
+raw_data/**/*.sra

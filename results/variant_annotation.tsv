@@ -1,0 +1,11 @@
+CHROM	POS	REF	ALT	EFFECT	IMPACT	GENE	GENE_ID	HGVS_C	WARNING
+NC_000913.3	4296380	AC	ACGC	downstream_gene_variant	MODIFIER	nrfD	gene-b4073		
+NC_000913.3	4296380	AC	ACGC	downstream_gene_variant	MODIFIER	nrfE	gene-b4074		WARNING_TRANSCRIPT_NO_START_CODON
+NC_000913.3	4296380	AC	ACGC	downstream_gene_variant	MODIFIER	nrfF	gene-b4075		
+NC_000913.3	4296380	AC	ACGC	downstream_gene_variant	MODIFIER	nrfG	gene-b4076		
+NC_000913.3	4296380	AC	ACGC	downstream_gene_variant	MODIFIER	gltP	gene-b4077		
+NC_000913.3	4296380	AC	ACGC	downstream_gene_variant	MODIFIER	yjcO	gene-b4078		
+NC_000913.3	4296380	AC	ACGC	downstream_gene_variant	MODIFIER	fdhF	gene-b4079		
+NC_000913.3	4296380	AC	ACGC	downstream_gene_variant	MODIFIER	mdtP	gene-b4080		
+NC_000913.3	4296380	AC	ACGC	downstream_gene_variant	MODIFIER	mdtO	gene-b4081		
+NC_000913.3	4296380	AC	ACGC	intergenic_region	MODIFIER	gltP-yjcO	gene-b4077-gene-b4078		

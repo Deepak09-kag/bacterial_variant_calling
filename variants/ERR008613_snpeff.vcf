@@ -1,0 +1,34 @@
+##fileformat=VCFv4.2
+##FILTER=<ID=PASS,Description="All filters passed">
+##bcftoolsVersion=1.19+htslib-1.19
+##bcftoolsCommand=mpileup -f reference/GCF_000005845.2_ASM584v2_genomic.fna -Ou alignment/ERR008613_sorted.bam
+##reference=file://reference/GCF_000005845.2_ASM584v2_genomic.fna
+##contig=<ID=NC_000913.3,length=4641652>
+##ALT=<ID=*,Description="Represents allele(s) other than observed.">
+##INFO=<ID=INDEL,Number=0,Type=Flag,Description="Indicates that the variant is an INDEL.">
+##INFO=<ID=IDV,Number=1,Type=Integer,Description="Maximum number of raw reads supporting an indel">
+##INFO=<ID=IMF,Number=1,Type=Float,Description="Maximum fraction of raw reads supporting an indel">
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Raw read depth">
+##INFO=<ID=VDB,Number=1,Type=Float,Description="Variant Distance Bias for filtering splice-site artefacts in RNA-seq data (bigger is better)",Version="3">
+##INFO=<ID=RPBZ,Number=1,Type=Float,Description="Mann-Whitney U-z test of Read Position Bias (closer to 0 is better)">
+##INFO=<ID=MQBZ,Number=1,Type=Float,Description="Mann-Whitney U-z test of Mapping Quality Bias (closer to 0 is better)">
+##INFO=<ID=BQBZ,Number=1,Type=Float,Description="Mann-Whitney U-z test of Base Quality Bias (closer to 0 is better)">
+##INFO=<ID=MQSBZ,Number=1,Type=Float,Description="Mann-Whitney U-z test of Mapping Quality vs Strand Bias (closer to 0 is better)">
+##INFO=<ID=SCBZ,Number=1,Type=Float,Description="Mann-Whitney U-z test of Soft-Clip Length Bias (closer to 0 is better)">
+##INFO=<ID=SGB,Number=1,Type=Float,Description="Segregation based metric, http://samtools.github.io/bcftools/rd-SegBias.pdf">
+##INFO=<ID=MQ0F,Number=1,Type=Float,Description="Fraction of MQ0 reads (smaller is better)">
+##FORMAT=<ID=PL,Number=G,Type=Integer,Description="List of Phred-scaled genotype likelihoods">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##INFO=<ID=AC,Number=A,Type=Integer,Description="Allele count in genotypes for each ALT allele, in the same order as listed">
+##INFO=<ID=AN,Number=1,Type=Integer,Description="Total number of alleles in called genotypes">
+##INFO=<ID=DP4,Number=4,Type=Integer,Description="Number of high-quality ref-forward , ref-reverse, alt-forward and alt-reverse bases">
+##INFO=<ID=MQ,Number=1,Type=Integer,Description="Average mapping quality">
+##bcftools_callVersion=1.19+htslib-1.19
+##bcftools_callCommand=call --ploidy 1 -mv -Ov -o variants/ERR008613_haploid_raw.vcf; Date=Mon Aug 24 06:51:14 2026
+##SnpEffVersion="5.2b (build 2023-11-28 15:56), by Pablo Cingolani"
+##SnpEffCmd="SnpEff  ecoli_k12_mg1655 variants/ERR008613_haploid_raw.vcf "
+##INFO=<ID=ANN,Number=.,Type=String,Description="Functional annotations: 'Allele | Annotation | Annotation_Impact | Gene_Name | Gene_ID | Feature_Type | Feature_ID | Transcript_BioType | Rank | HGVS.c | HGVS.p | cDNA.pos / cDNA.length | CDS.pos / CDS.length | AA.pos / AA.length | Distance | ERRORS / WARNINGS / INFO' ">
+##INFO=<ID=LOF,Number=.,Type=String,Description="Predicted loss of function effects for this variant. Format: 'Gene_Name | Gene_ID | Number_of_transcripts_in_gene | Percent_of_transcripts_affected'">
+##INFO=<ID=NMD,Number=.,Type=String,Description="Predicted nonsense mediated decay effects for this variant. Format: 'Gene_Name | Gene_ID | Number_of_transcripts_in_gene | Percent_of_transcripts_affected'">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	alignment/ERR008613_sorted.bam
+NC_000913.3	4296380	.	AC	ACGC	228.396	.	INDEL;IDV=224;IMF=0.941176;DP=238;VDB=0.000439338;SGB=-0.693147;RPBZ=-6.27497;MQBZ=1.30354;MQSBZ=-3.76833;BQBZ=-1.70784;SCBZ=-10.8125;MQ0F=0.00420168;AC=1;AN=1;DP4=13,1,213,11;MQ=42;ANN=ACGC|downstream_gene_variant|MODIFIER|nrfD|gene-b4073|transcript|TRANSCRIPT_gene-b4073|protein_coding||c.*4949_*4950insGC|||||4950|,ACGC|downstream_gene_variant|MODIFIER|nrfE|gene-b4074|transcript|TRANSCRIPT_gene-b4074|protein_coding||c.*3211_*3212insGC|||||3212|WARNING_TRANSCRIPT_NO_START_CODON,ACGC|downstream_gene_variant|MODIFIER|nrfF|gene-b4075|transcript|TRANSCRIPT_gene-b4075|protein_coding||c.*2835_*2836insGC|||||2836|,ACGC|downstream_gene_variant|MODIFIER|nrfG|gene-b4076|transcript|TRANSCRIPT_gene-b4076|protein_coding||c.*2242_*2243insGC|||||2243|,ACGC|downstream_gene_variant|MODIFIER|gltP|gene-b4077|transcript|TRANSCRIPT_gene-b4077|protein_coding||c.*587_*588insGC|||||588|,ACGC|downstream_gene_variant|MODIFIER|yjcO|gene-b4078|transcript|TRANSCRIPT_gene-b4078|protein_coding||c.*54_*55insGC|||||54|,ACGC|downstream_gene_variant|MODIFIER|fdhF|gene-b4079|transcript|TRANSCRIPT_gene-b4079|protein_coding||c.*837_*838insGC|||||837|,ACGC|downstream_gene_variant|MODIFIER|mdtP|gene-b4080|transcript|TRANSCRIPT_gene-b4080|protein_coding||c.*3182_*3183insGC|||||3182|,ACGC|downstream_gene_variant|MODIFIER|mdtO|gene-b4081|transcript|TRANSCRIPT_gene-b4081|protein_coding||c.*4645_*4646insGC|||||4645|,ACGC|intergenic_region|MODIFIER|gltP-yjcO|gene-b4077-gene-b4078|intergenic_region|gene-b4077-gene-b4078|||n.4296381_4296382insGC||||||	GT:PL	1:255,0
